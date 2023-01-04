@@ -1,0 +1,491 @@
+@font-face{
+	font-family: "jost";
+	src: url(../font/Jost-300-Light.ttf);
+}
+
+@font-face{
+	font-family: "tabarra";
+	src: url(../font/TabarraLight.ttf);
+}
+
+@font-face{
+	font-family: "tabarraN";
+	src: url(../font/TabarraPro.ttf);
+}
+
+body{
+	font-family: "jost";
+	color: #373544;
+}
+
+hr{
+	margin-bottom: 40px;
+	margin-top: 10px;
+	width:150px;
+}
+
+strong{
+	font-weight: normal;
+	color: #111C93;
+}
+
+/*grande image en tete*/
+.fond{
+	width: 100%;
+	height: auto;
+	margin-bottom: -40px;
+}
+
+/*portefolio texte bienvenue entrée du site*/
+
+.portefolio{ /*section portefolio et bienvenue*/
+	position: absolute;
+	display: block;
+	margin-top: -25%;
+	color: white;
+}
+
+.porte{
+	font-weight: normal;
+	color: #CFE9FF;
+}
+
+
+/*titres*/
+h1{
+	text-align: center;
+	font-size: 2em;
+	font-family: "tabarra";
+	margin-top: 10px;
+	color: #111C93;
+	font-weight: normal;
+	letter-spacing: 5px;
+}
+
+/*PORTEFOLIO*/
+h1.titre{
+	text-align: left;
+	color: white;
+}
+
+/*ancre qui ne cache pas le titre*/
+h1[id^="ancre"] {
+padding-top: 120px;
+position: relative;
+top: -120px;
+margin-bottom: -100px;
+}
+
+/*general settings*/
+
+.row{
+	margin: 30px;
+	text-align: left;
+}
+
+/*Barre de nav*/
+
+.nav{
+	font-family: "tabarraN";
+	background-color: rgba(11, 17, 80, 0.9);
+	text-transform: uppercase;
+}
+
+.nav-link{
+	text-align:center;
+	font-size: 1.2em;
+	letter-spacing: 0.1em;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+nav a{
+	background: linear-gradient(to top, rgba(232, 161, 234, 1)0%, rgba(225, 97, 115, 1) 3px, transparent 4px) no-repeat !important;
+	background-size: 0% 100% !important;
+	transition: background-size .5s !important;
+	color: white !important;
+}
+
+nav a:hover{
+	background-size: 100% 100% !important;
+}
+
+/*Présentation*/
+.sectionPresentation{ /*row entière*/
+	margin-top: -40px;
+}
+
+.clarisse{ /*juste mon prénom*/
+	font-weight: normal;
+}
+.prenom{ /*mon identité*/
+	font-size: 1.5em;
+	color: #111C93;
+	font-weight: bold;
+}
+
+.presentation{ /*présentation + identité*/
+	text-align: justify;
+	padding: 20px;
+}
+
+.lettrine{
+	float:left;
+	font-size:3em; /*taille premiere lettre = lettrine de la présentation*/
+	margin-right:3%;
+	margin-top:-5%;
+}
+
+
+p.plettrine{ /*paragraphe de la présentation*/
+	margin-bottom: 20px;
+}
+
+
+.reseaux{ /*encadré des réseaux*/
+	background-color: none;
+	text-align: center;
+	align-self: center;
+	border: 1px solid #eee;
+	padding:20px;
+	margin-bottom: 30px;
+}
+
+.rs{ /*icones des réseaux*/
+	margin-left:10px;
+	margin-right:10px;
+	height:50px;
+	width: auto;
+	filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	-webkit-transition: all 0.3s ease;
+  	transition: all 0.3s ease;
+}
+
+.rs:hover {
+	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+}
+
+.rs:active {
+	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+}
+
+/*Mes compétences*/
+
+.sectionCompetence{ 
+	text-align: center;
+}
+
+.competence{ /*icones des compétences*/
+	height: 200px;
+	width: auto;
+}
+
+ul{ /*ul des compétences*/
+	list-style-type: none;
+	margin-bottom: 50px;
+	padding: 0;
+}
+
+li{ /*li des compétences*/
+	margin-top: 10px;
+}
+
+/*Cartes des projets*/
+/*boutons langage*/
+button{
+	border: none;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 5px;
+	margin-bottom: 15px;
+	color: #fff;
+	font-weight: bold;
+	background-color: #1A65D2;
+	border-radius: 5px;
+	-webkit-transition: all 0.3s ease;
+  	transition: all 0.4s ease;
+  	
+}
+
+button:hover{
+	background: #09319C;
+	color: #fff;
+}
+
+button:focus{
+	outline: none;
+}
+
+/*CARTES*/
+div.row[id^="p"]{
+	align-items: center;
+}
+
+.card{ /*carte*/
+	padding: 15px;
+	height: auto;
+	width: 100%;
+	background-color: #F6F6F6;
+	text-align: justify;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+}
+
+.imageVisuel{ /*image du visuel de projet*/
+	height:auto;
+	width:100%;
+	align-self: center;
+	border: 1px solid #dadada;
+}
+
+.card-title{ /*nom du projet*/
+	font-family: "tabarra";
+	font-size: 1.3em;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 30px;
+	letter-spacing: 1px;
+}
+
+.card-body{
+	text-align: center;
+}
+
+/*Fenetres modales*/
+h2{
+	color: #111C93;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+p.card-text{
+	text-align: center;
+}
+
+.modal-header{
+	background-image: url(../img/fond/fond.png);
+	background-size: 100%;
+	background-position: 0% 100%;
+	height: 80px;
+	border: none;
+}
+
+.modal-title{
+	display: none;
+}
+
+.modal-body{
+	padding: 50px !important;
+	text-align: justify;
+}
+
+.modal-footer{
+	margin-top: 20px;
+	background-color: #EBEBEB;
+}
+
+.image{ /*image fenetre modale*/
+	border: 1px solid #dadada;
+}
+
+div.boutonLangage{ /*section des boutons qui déclarent les langages utilisés dans le projet*/
+	text-align: left;
+	margin-bottom: 20px;
+	margin-top: -10px;
+	color: #fff;
+}
+
+div.boutonLangage p.modalButton{ /*style général des boutons déclaratifs des langages*/
+	display: inline-block;
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 5px;
+	margin-left: none;
+	font-weight: bold;
+	border-radius: 5px;
+	font-size: 0.9em;
+}
+/*toutes les couleurs des boutons des langages présents dans les fenêtres modales*/
+div.boutonLangage p.modalButtonHtml{background-color: #463C4A;}
+div.boutonLangage p.modalButtonCss{background-color: #C42D76;}
+div.boutonLangage p.modalButtonJs{background-color: #2238BD;}
+div.boutonLangage p.modalButtonPhp{background-color: #0B1150;}
+
+
+em{
+	margin-right: 20px !important;
+	font-style: normal;
+}
+
+.card-body button  {
+	background-color: #1A65D2;
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.card-body button:hover{
+	background-color: #09319C;
+	color: #fff;
+}
+
+/*footer*/
+
+footer{
+	text-align: center;
+	padding-top: 30px;
+}
+
+
+.imageFooter{
+	width: 100%;
+	height: auto;
+}
+
+footer hr{
+	margin-top: 10px;
+	margin-bottom: 80px;
+}
+/*////////////////////////////////////////////////*/
+/*RESPONSIVE MEDIA QUERIES*/
+/*////////////////////////////////////////////////*/
+
+@media (min-width: 2100px){
+	body{
+		font-size: 2em !important;
+	}
+
+	div.container{
+		min-width: 2000px !important;
+	}
+}
+@media (min-width: 1900px){
+
+	.container{
+		min-width: 1600px !important;
+	}
+}
+
+
+@media (min-width: 1700px){
+
+	body{
+		font-size: 1.6em;
+	}
+
+	.container{
+		min-width: 1400px !important;
+	}
+
+	.competence{
+	height: 300px;
+	width: auto;
+	}
+
+	.rs{
+		height: 80px;
+	}
+
+	.card{
+		min-height: 320px;
+	}
+
+	.card-body button  {
+		font-size: 0.9em;
+	}
+
+	.card-text{
+		margin-bottom: 50px !important;
+		margin-top: 50px !important;
+	}
+}
+
+@media (max-width: 1030px){
+	.portefolio{ /*section portefolio et bienvenue*/
+		margin-top: -35%;
+	}
+}
+
+@media (max-width: 870px){
+	footer hr{
+	display: none;
+	}
+}
+
+@media (max-width: 767px){
+	.portefolio{ /*section portefolio et bienvenue*/
+		position: inherit;
+		margin-top: 0;
+		color: #373544;
+		text-align: center;
+	}
+
+	h1.titre{
+		color: #373544;
+		text-align: center;
+		margin-bottom: 40px;
+		margin-top: 40px;
+	}
+
+	.porte{
+		color:#111C93;
+		font-weight: bold;
+	}
+
+	.textBienvenue{ /*section portefolio et bienvenue*/
+		color: #111C93;
+		display: block;
+		font-weight: bolder;
+	}
+
+	.paragraphe1{
+		display: flex;
+		justify-content: left;
+		text-align: left;
+	}
+	.modal-body{
+	padding: 30px !important;
+	}
+
+}
+
+@media(max-width: 500px){
+	.row{
+		margin: 0 !important;
+	}
+
+	h1{
+		font-weight: bold;
+		font-size: 1.3em;
+	}
+
+	h1.titre{
+		margin-bottom: 40px;
+		margin-top: 60px;
+	}
+
+	.porte{
+		font-weight: normal;
+	}
+
+	.portefolio{ /*section portefolio et bienvenue*/
+		margin-bottom: 30px;
+	}
+
+	.card{
+		margin-bottom: 30px !important;
+	}
+}
+
+@media(max-width: 350px){
+	.modal-body{
+	padding: 5px !important;
+}	
+}
